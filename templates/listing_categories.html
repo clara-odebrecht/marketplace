@@ -1,6 +1,8 @@
 {% extends 'index.html' %}
 {% block body %}
     {% for element in list %}
-        <li><a href="category-products/{{ element.get_identifier() }}">{{ element.get_identifier() }} - {{ element.get_description() }}</a></li>
+        {% if element.get_marketplace() == markeplace_identifier %}
+            <li><a href="category-products/{{ element.get_identifier() }}">{{ element.get_identifier() }} - {{ element.get_description() }}</a></li>
+        {% endif %}
     {% endfor %}
 {% endblock %}

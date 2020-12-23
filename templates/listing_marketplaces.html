@@ -1,0 +1,6 @@
+{% extends 'index.html' %}
+{% block body %}
+    {% for element in list %}
+        <li><a href="marketplace-categories/{{ element.get_identifier() }}">{{ element.get_identifier() }} - {{ element.get_description() }}</a></li>
+    {% endfor %}
+{% endblock %}
