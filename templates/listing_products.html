@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+{% block body %}
+    {% for element in list %}
+        {% if element.get_category() == category_identifier %}
+            <li><a href="product/{{ element.get_name() }}">{{ element.get_name() }}</a></li>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

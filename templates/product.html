@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% block body %}
+    {% for element in list %}
+        {% if element.get_name() == product_name %}
+            <h3>{{ element.get_name() }}</h3>
+            <h4>-- Detalhes --</h4>
+            <p>Descrição: {{ element.get_description() }}</p>
+            <p>Preço: {{ element.get_price() }}</p>
+            <p>Quantidade de Unidades: {{ element.get_quantity() }}</p>
+            <p>Categoria: {{ element.get_category() }}</p>
+            <h4>-- Medidas --</h4>
+            <p>Largura: {{ element.get_width() }} cm</p>
+            <p>Altura: {{ element.get_width() }} cm</p>
+            <p>Profundidade: {{ element.get_depth() }} cm</p>
+            <p>Peso: {{ element.get_weight() }} kg</p>
+
+
+        {% endif %}
+
+    {% endfor %}
+{% endblock %}
