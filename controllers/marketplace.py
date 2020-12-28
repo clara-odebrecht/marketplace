@@ -13,7 +13,6 @@ class Marketplace:
     def set_description(self, value) -> None:
         self.__description = value
 
-
     def show_all(self) -> None:
         print("Identificação: ", self.__identifier)
         print("Descrição: ", self.__description)

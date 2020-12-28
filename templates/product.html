@@ -1,19 +1,56 @@
 {% extends 'index.html' %}
 {% block body %}
     {% for element in list %}
-        {% if element.get_name() == product_name %}
-            <h3>{{ element.get_name() }}</h3>
-            <h4>-- Detalhes --</h4>
-            <p>Descrição: {{ element.get_description() }}</p>
-            <p>Preço: {{ element.get_price() }}</p>
-            <p>Quantidade de Unidades: {{ element.get_quantity() }}</p>
-            <p>Categoria: {{ element.get_category() }}</p>
-            <h4>-- Medidas --</h4>
-            <p>Largura: {{ element.get_width() }} cm</p>
-            <p>Altura: {{ element.get_width() }} cm</p>
-            <p>Profundidade: {{ element.get_depth() }} cm</p>
-            <p>Peso: {{ element.get_weight() }} kg</p>
-
+        {% if element[0] == product_name %}
+        <div>
+            <h2>{{ element[0] }}</h2>
+            <table>
+                <tr>
+                    <th colspan="2" class="col-main">Detalhes</th>
+                </tr>
+                <tr>
+                    <th width='40%'>Descrição</th>
+                    <td>{{ element[3] }}</td>
+                </tr>
+                <tr>
+                    <th>Preço</th>
+                    <td>{{ element[1] }}</td>
+                </tr>
+                <tr>
+                    <th>Quantidade estoque</th>
+                    <td>{{ element[2] }}</td>
+                </tr>
+                <tr>
+                    <th>Categoria</th>
+                    <td>{{ element[8] }}</td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div>
+            <table>
+                <tr>
+                    <th colspan="2" class="col-main">Medidas</th>
+                </tr>
+                <tr>
+                    <th width='40%'>Largura</th>
+                    <td>{{ element[4] }}</td>
+                </tr>
+                <tr>
+                    <th>Altura</th>
+                    <td>{{ element[5] }}</td>
+                </tr>
+                <tr>
+                    <th>Profundidade</th>
+                    <td>{{ element[6] }}</td>
+                </tr>
+                <tr>
+                    <th>Peso</th>
+                    <td>{{ element[7] }}</td>
+                </tr>
+            </table>
+        </div>
 
         {% endif %}
 

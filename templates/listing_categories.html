@@ -1,8 +1,20 @@
 {% extends 'index.html' %}
 {% block body %}
+<table>
+    <tr>
+        <th>Código</th>
+        <th>Descrição</th>
+    </tr>
     {% for element in list %}
-        {% if element.get_marketplace() == markeplace_identifier %}
-            <li><a href="category-products/{{ element.get_identifier() }}">{{ element.get_identifier() }} - {{ element.get_description() }}</a></li>
+        {% if element[3] == markeplace_identifier %}
+        <tr>
+            <td>{{ element[0] }}</td>
+            <td>
+                <a href="category-products/{{ element[0] }}">
+                <p>{{ element[1] }}</p>
+                </a>
+            </td>
+        </tr>
         {% endif %}
     {% endfor %}
 {% endblock %}

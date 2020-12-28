@@ -1,0 +1,6 @@
+CAT-01;Moveis;main;MKT-02
+CAT-02;Eletronicos;main;MKT-03
+CAT-03;Eletrodomesticos;main;MKT-01
+CAT-04;Jardinagem;main;MKT-04
+CAT-05;Beleza;main;MKT-02
+CAT-06;Brinquedos;main;MKT-01

@@ -1,6 +1,19 @@
 {% extends 'index.html' %}
 {% block body %}
-    {% for element in list %}
-        <li><a href="marketplace-categories/{{ element.get_identifier() }}">{{ element.get_identifier() }} - {{ element.get_description() }}</a></li>
-    {% endfor %}
+<table>
+    <tr>
+        <th>Código</th>
+        <th>Descrição</th>
+        {% for element in list %}
+            <tr>
+                <td>{{ element[0] }}</td>
+                <td>
+                    <a href="marketplace-categories/{{ element[0] }}">
+                    <p>{{ element[1] }}</p>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tr>
+</table>
 {% endblock %}

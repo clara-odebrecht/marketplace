@@ -1,0 +1,4 @@
+Celular;900.00;7;Redmi Note 7;5.5;4.5;2.5;1.9;CAT-02
+Perfume;250.00;15;Frasco 30ml;5.5;4.5;2.5;1.9;CAT-05
+Air Fryer;789.00;3;apenas 220v;5.5;4.5;2.5;1.9;CAT-03
+Pá;150.00;10;Em madeira e aço;5.5;4.5;2.5;1.9;CAT-04
