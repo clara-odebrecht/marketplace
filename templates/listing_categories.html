@@ -1,20 +1,29 @@
 {% extends 'index.html' %}
 {% block body %}
-<table>
-    <tr>
-        <th>Código</th>
-        <th>Descrição</th>
-    </tr>
-    {% for element in list %}
-        {% if element[3] == markeplace_identifier %}
+<div>
+    <div class='button'>
+        <a href='/create-category/{{ markeplace_identifier }}' class="link-button">
+            <p>Criar novo</p>
+        </a>
+    </div>
+    <br />
+    <table>
         <tr>
-            <td>{{ element[0] }}</td>
-            <td>
-                <a href="category-products/{{ element[0] }}">
-                <p>{{ element[1] }}</p>
-                </a>
-            </td>
+            <th>Código</th>
+            <th>Descrição</th>
         </tr>
-        {% endif %}
-    {% endfor %}
+        {% for element in list %}
+            {% if element[3] == markeplace_identifier %}
+            <tr>
+                <td>{{ element[0] }}</td>
+                <td>
+                    <a href="category-products/{{ element[0] }}" class="link">
+                    <p>{{ element[1] }}</p>
+                    </a>
+                </td>
+            </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+</div>
 {% endblock %}

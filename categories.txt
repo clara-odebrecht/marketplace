@@ -4,3 +4,4 @@ CAT-03;Eletrodomesticos;main;MKT-01
 CAT-04;Jardinagem;main;MKT-04
 CAT-05;Beleza;main;MKT-02
 CAT-06;Brinquedos;main;MKT-01
+CAT-07;Vestuário;main;MKT-01

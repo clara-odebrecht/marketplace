@@ -1,19 +1,27 @@
 {% extends 'index.html' %}
 {% block body %}
-<table>
-    <tr>
-        <th>Código</th>
-        <th>Descrição</th>
-        {% for element in list %}
-            <tr>
-                <td>{{ element[0] }}</td>
-                <td>
-                    <a href="marketplace-categories/{{ element[0] }}">
-                    <p>{{ element[1] }}</p>
-                    </a>
-                </td>
-            </tr>
-        {% endfor %}
-    </tr>
-</table>
+<div>
+    <div class='button'>
+        <a href='/create-marketplace' class="link-button">
+            <p>Criar novo</p>
+        </a>
+    </div>
+    <br />
+    <table>
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            {% for element in list %}
+                <tr>
+                    <td>{{ element[0] }}</td>
+                    <td>
+                        <a href="marketplace-categories/{{ element[0] }}" class="link">
+                        <p>{{ element[1] }}</p>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tr>
+    </table>
+</div>
 {% endblock %}
