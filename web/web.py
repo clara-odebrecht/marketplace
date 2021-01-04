@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request
+
+import sys
+sys.path.append('server')
+
 from controllers.marketplace import Marketplace
 from controllers.category import Category
 from controllers.product import Product
-from arq import create_marketplace, read_marketplaces, create_category, read_categories, create_product, read_products
+from controllers.arq import create_marketplace, read_marketplaces, create_category, read_categories, create_product, read_products
 
 app = Flask(__name__)
 
@@ -12,6 +16,9 @@ def create_marketplaces():
 
 @app.route("/marketplaces", methods=["GET", "POST"])
 def list_marketplaces():
+    print("file:  ", __file__)
+    print("name:  ", __name__)
+    print("doc:  ", __doc__)
     if request.method == "POST":
         create_marketplace(request.form)
     marketplaces = read_marketplaces()

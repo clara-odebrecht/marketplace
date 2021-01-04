@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% block body %}
+<form action="/marketplace-categories/category-products/{{ category_identifier }}" method="POST">
+    <input class="form" type="text" placeholder="Nome produto" name="name" />
+    <input class="form bigger-size" type="text" placeholder="Descrição" name="description" />
+    <br /><br />
+    <input class="form" type="number" placeholder="Preço" name="price" />
+    <input class="form" type="number" placeholder="Quantidade estoque" name="quantity" />
+    <input class="form" type="text" value="{{ category_identifier }}" name="category" />
+    <br /><br />
+    <input class="form" type="number" placeholder="Largura" name="width" />
+    <input class="form" type="number" placeholder="Altura" name="height" />
+    <input class="form" type="number" placeholder="Profundidade" name="depth" />
+    <input class="form" type="number" placeholder="Peso" name="weigth" />
+    <br /><br />
+    <input type="submit" class="button"/>
+</form>
+{% endblock %}

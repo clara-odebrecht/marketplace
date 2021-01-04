@@ -3,3 +3,7 @@ Perfume;250.00;15;Frasco 30ml;5.5;4.5;2.5;1.9;CAT-05
 Air Fryer;789.00;3;apenas 220v;5.5;4.5;2.5;1.9;CAT-03
 Pá;150.00;10;Em madeira e aço;5.5;4.5;2.5;1.9;CAT-04
 Blusa;45;7;Decote em V;20;40;1;200;CAT-03
+Camisa;70;10;regata, decote em v;40;80;1;1;CAT-07
+Caneta;3;70;Vermelha;8;2;2;1;CAT-10
+Céu estrelado;150;40;Papel com fundo azul e estrelas;1000;2000;1;10;CAT-14
+Qboa;10;20;Limpa tudo;8;15;8;5;CAT-08

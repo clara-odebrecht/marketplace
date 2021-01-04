@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block body %}
+<form action="/marketplace-categories/{{ markeplace_identifier }}" method="POST">
+    <input class="form" type="text" placeholder="Id Categoria" name="identifier" />
+    <input class="form bigger-size" type="text" placeholder="Descrição" name="description" />
+    <br /><br />
+    <input class="form" type="text" placeholder="main ou sub" name="type" />
+    <input class="form" type="text" value="{{ markeplace_identifier }}" name="marketplace" />
+    <br /><br />
+    <input type="submit" class="button"/>
+</form>
+{% endblock %}

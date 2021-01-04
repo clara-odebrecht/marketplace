@@ -4,3 +4,5 @@ MKT-03;Shopee
 MKT-04;Amazon
 MKT-05;Marisa
 MKT-11;Aliexpress
+MKT-13;Magazine luiza
+MKT-06;Estrela 10

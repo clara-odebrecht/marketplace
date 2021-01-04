@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block body %}
+<form action="/marketplaces" method="POST">
+    <input class="form" type="text" placeholder="Identificação" name="identifier" />
+    <br /><br />
+    <input class="form bigger-size" type="text" placeholder="Descrição" name="description" />
+    <br /><br />
+    <input type="submit" class="button"/>
+</form>
+{% endblock %}
